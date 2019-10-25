@@ -6,7 +6,6 @@ body {
     padding: 0;
     background-color: #ebebeb;
     font-family: Arial, Helvetica, sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
 }
 .container-fluid {
     width: 100%;
@@ -77,18 +76,29 @@ h1 {
     font-weight: bold;
     font-size: 2.5rem;
 }
-h2, h3, h4, h5 {
+h2 {
     font-weight: normal;
     margin-bottom: 0;
 }
+button {
+    margin: 20px 0;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+}
 
-/* insight boxes */
-#insights {
-    padding-top: 30px;
+/* insights section */
+section {
+    padding: 30px 0;
 }
 .grid-container {
     display: grid;
-    gap: 5px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 /* angled corners for images */
@@ -120,14 +130,13 @@ h2, h3, h4, h5 {
 
 .insight {
     float: left;
-    /* max-width: 28%; */
-    margin-right: 20px;
     background-color: #fff;
     padding: 20px;
     border-bottom: #1450d2 solid 10px;
     box-shadow: #b6b5b5 0px 0px 10px;
     color: #1450d2;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .insight-img {
     max-width: 100%;
@@ -149,6 +158,95 @@ h2, h3, h4, h5 {
     border-bottom: #009bfa solid 10px;
     color: #009bfa;
 }
+
+/* commitment section */
+.banner2 {
+    padding: 30px 0;
+    -moz-box-shadow:    inset 0 0 20px #001254;
+    -webkit-box-shadow: inset 0 0 20px #001254;
+    box-shadow:         inset 0 0 20px #001254;
+    background: url(../img/fractal-bkgd.jpg) no-repeat;
+    background-position: center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+      background-size: cover;
+}
+.heading-white {
+    color: white;
+    font-weight: bold;
+    text-shadow: #001254 1px 1px 2px;
+    line-height: 2rem;
+}
+.text-white {
+    color: white;
+    text-shadow: #001254 1px 1px 2px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* events section */
+.outer-box {
+    position: relative;
+    margin-top: 30px;
+}
+.inner-box {
+    background-color: #1450d2;
+    color: #fff;
+    padding: 50px 25px;
+}
+.date-box {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 25px;
+    top: -1px;
+    background-color: #001254;
+    color: #fff;
+    text-align: center;
+}
+
+.date {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+.location-box {
+    position: absolute;
+    bottom: -5px;
+    height: 45px;
+    right: 0;
+    width: 80%;
+    background-color: #ebebeb;
+}
+.location-text {
+    /* vertical-align: 40px; */
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    right: 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+}
+.triangle-topleft-location {
+    width: 0;
+    height: 0;
+    border-top: 40px solid #1450d2;
+    border-right: 40px solid transparent;
+}
+.triangle-bottomright-date {
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-bottom: 20px solid #001254;
+    border-left: 20px solid transparent;
+    opacity: .7;
+}
+
+
 
 /* media queries */
 
