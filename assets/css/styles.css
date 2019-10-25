@@ -246,6 +246,28 @@ section {
     opacity: .7;
 }
 
+/* footer */
+.footer {
+    background-color: #707070;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
+    color: #fff;
+}
+.social-box {
+    float: right;
+}
+.social {
+    float: right;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+.footer-content {
+    opacity: .8;
+}
+
 
 
 /* media queries */
