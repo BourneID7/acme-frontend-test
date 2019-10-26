@@ -114,32 +114,43 @@ section {
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
 }
-/* angled corners for images */
-.angled-lg {
-    height: 320px;
-    background: transparent;
-    position: relative;
-}
-.top-left:after {
-    content:'';
+/* triangles */
+
+.triangle-topleft-lg {
     position: absolute;
+    z-index: 100;
+    width: 0;
+    height: 0;
     top: 0;
     left: 0;
-
-    border-top: 80px solid white;
-    border-right: 80px solid transparent;
-    width: 0;
+    border-top: 40px solid #fff;
+    border-right: 40px solid transparent;
 }
-
-.bottom-right:before {
-    content:'';
+.triangle-bottomright-lg {
     position: absolute;
-    bottom: 0;
-    right: 0; 
-    border-bottom: 160px solid white;
-    border-left: 160px solid transparent;
+    z-index: 100;
     width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    border-bottom: 40px solid #fff;
+    border-left: 40px solid transparent;
 }
+.triangle-location {
+    border-top: 33px solid #1450d2;
+    border-right: 33px solid transparent;
+
+}
+.triangle-bottomright-sm {
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-bottom: 20px solid #001254;
+    border-left: 20px solid transparent;
+    opacity: .7;
+}
+
+/* insights section */
 
 .insight {
     float: left;
@@ -151,18 +162,16 @@ section {
     font-weight: bold;
     margin-bottom: 20px;
 }
+.insight-img-box {
+    position: relative;
+}
 .insight-img {
     width: 100%;
 } 
-.insight-heading {
-    position: absolute;
-    bottom: 20px;
-    z-index: 100;
-    padding-right: 100px;
-}
 .insight-heading h2 {
     font-weight: bold;
 }
+
 .insight2 {
     border-bottom: #01a49c solid 10px;
     color: #01a49c;
@@ -204,12 +213,14 @@ section {
     margin-top: 30px;
 }
 .inner-box {
+    position: relative;
     background-color: #1450d2;
     color: #fff;
     padding: 50px 25px;
 }
 .date-box {
     position: absolute;
+    z-index: 100;
     width: 70px;
     height: 70px;
     left: 25px;
@@ -226,37 +237,20 @@ section {
 }
 .location-box {
     position: absolute;
-    bottom: -5px;
-    height: 45px;
+    z-index: 100;
+    bottom: 0;
     right: 0;
     width: 80%;
     background-color: #ebebeb;
 }
 .location-text {
-    /* vertical-align: 40px; */
-    position: absolute;
-    width: 100%;
-    bottom: -10px;
-    right: 10px;
     font-family: 'Barlow', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     color: black;
     text-align: right;
-}
-.triangle-topleft-location {
-    width: 0;
-    height: 0;
-    border-top: 40px solid #1450d2;
-    border-right: 40px solid transparent;
-}
-.triangle-bottomright-date {
-    width: 0;
-    height: 0;
-    margin-left: 5px;
-    border-bottom: 20px solid #001254;
-    border-left: 20px solid transparent;
-    opacity: .7;
+    padding: 10px 10px 0 0;
+    margin: 0;
 }
 
 /* footer */
