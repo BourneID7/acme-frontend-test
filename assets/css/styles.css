@@ -114,6 +114,7 @@ section {
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 /* triangles */
 
 .triangle-topleft-lg {
@@ -137,9 +138,8 @@ section {
     border-left: 40px solid transparent;
 }
 .triangle-location {
-    border-top: 33px solid #1450d2;
-    border-right: 33px solid transparent;
-
+    border-top: 32px solid #1450d2;
+    border-right: 32px solid transparent;
 }
 .triangle-bottomright-sm {
     width: 0;
@@ -238,8 +238,8 @@ section {
 .location-box {
     position: absolute;
     z-index: 100;
-    bottom: 0;
-    right: 0;
+    bottom: -1px;
+    right: -1px;
     width: 80%;
     background-color: #ebebeb;
 }
@@ -366,10 +366,35 @@ section {
         height: 250px;
         overflow: hidden;
     }
-    .bottom-right:before {
-        border-bottom: 100px solid white;
-        border-left: 100px solid transparent;
+    .bg-blue {
+        background-color: #001a7a;
+        color: #fff;
+    } 
+    .insight {
+        border-bottom: #01a49c solid 10px;
+        box-shadow: #000 0px 0px 10px;
+        color: #01a49c;
     }
-    
+    .insight3 {
+        border-bottom: #01a49c solid 10px;
+        color: #01a49c;
+    }
+    .inner-box {
+        background-color: #001a7a;
+    }
+    .date-box {
+        background-color: #fff;
+        color: #01a49c;
+    }
+    .triangle-bottomright-sm {
+        border-bottom: 20px solid #707070;
+    }
+    .triangle-location {
+        border-top: 32px solid #001a7a;
+        border-right: 32px solid transparent;
+    }
+    .location-text {
+        color: #707070;
+    }
     
   }
