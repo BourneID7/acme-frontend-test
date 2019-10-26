@@ -50,6 +50,13 @@ body {
     z-index: 100;
     max-height: 100px;
 }
+.logo-desktop {
+    display: block;
+    max-height: 100px;
+}
+.logo-mobile {
+    display: none;
+}
 .title {
     float: left;
     max-height: 70px;
@@ -74,6 +81,9 @@ body {
     font-weight: lighter;
     line-height: .7rem;
     opacity: .7;
+}
+.title-mobile {
+    display: none;
 }
 h1 {
     font-weight: bold;
@@ -142,7 +152,7 @@ section {
     margin-bottom: 20px;
 }
 .insight-img {
-    max-width: 100%;
+    width: 100%;
 } 
 .insight-heading {
     position: absolute;
@@ -286,7 +296,13 @@ section {
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav-bg {
+        background-color: #ebebeb;
+        border-bottom: none;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
@@ -297,4 +313,69 @@ section {
       display: block;
       text-align: left;
     }
+    .container {
+        padding: 0 30px;
+    }
+    .grid-container {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    .title {
+        display: none;
+    }
+    .title-mobile {
+        display: block;
+        font-size: .8rem;
+    }
+
+    .logo {
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .logo-desktop {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+    }
+    .banner {
+        background: #009bfa;
+    }
+    .banner-text {
+        width: 100%;
+        padding: .5rem 0;
+    }
+    .banner-text p {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        line-height: 1rem;
+        opacity: .7;
+    }
+    .acme {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+    .dotted-gradient {
+        background-image: linear-gradient(to right, #fff 10%, rgba(255, 255, 255, 0) 20%);
+        background-position: top;
+        background-size: 30px 4px;
+        background-repeat: repeat-x;
+        opacity: .8;
+    }
+    .fa-bars {
+        color: #001254;
+    }
+    .insight-img-box {
+        height: 250px;
+        overflow: hidden;
+    }
+    .bottom-right:before {
+        border-bottom: 100px solid white;
+        border-left: 100px solid transparent;
+    }
+    
+    
   }
