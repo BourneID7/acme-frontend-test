@@ -37,6 +37,11 @@ $(document).ready(function(){
       // instead of a settings object
     ]
   });
+
+  // match height for items in slider
+  $(function() {
+    $('.slick-slide .inner-box').matchHeight();
+  });
 });
 
 let nav = document.getElementById("acmeTopnav");
