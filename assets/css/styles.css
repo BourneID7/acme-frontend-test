@@ -345,7 +345,7 @@ section {
 
 /* media queries */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
 
     /* screen overlay when menu toggle is open */
     .overlay:after {

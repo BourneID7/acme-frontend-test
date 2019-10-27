@@ -1,11 +1,12 @@
 // jQuery slider for mobile view
 $(document).ready(function(){
   $('.responsive').slick({
-    dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
+    prevArrow: false,
+    nextArrow: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -54,26 +55,17 @@ function toggleNav() {
 
 function runMediaQueries(x) {
   if (x.matches) { 
-    // If media query matches < 600px
+    // If media query matches < 675px
     nav.style.display = "none";
     document.body.classList.remove("overlay");
-    // for(var i = 0; i < grid.length; i++) {
-    //   grid.classList.add("slider");
-    //   grid.classList.remove("grid-container");
-    // }
   } else {
-    // > 600px
+    // > 675px
     nav.style.display = "flex";
     document.body.classList.remove("overlay");
-    // grid.className += " slider";
-    // grid.className -= " grid-container";
-    // for(var i = 0; i < grid.length; i++) {
-    // }
-
   }
 }
 
-let x = window.matchMedia("(max-width: 600px)");
+let x = window.matchMedia("(max-width: 675px)");
 
 runMediaQueries(x) // Call listener function at run time
 x.addListener(runMediaQueries) // Attach listener function on state changes 
